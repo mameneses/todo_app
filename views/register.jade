@@ -1,0 +1,8 @@
+extends layout
+block content
+  h1 Register
+
+  form#formLogin(name="register", method="post", action="/register")
+    input#inputUserName(type="text", placeholder="Username", name="username")
+    input#inputUserPassword(type="password", placeholder="Password", name="password")
+    button#btnSubmit(type="submit") submit  

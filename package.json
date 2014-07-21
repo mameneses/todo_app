@@ -1,0 +1,18 @@
+{
+  "name": "twitter-bubble",
+  "version": "0.0.1",
+  "private": "true",
+  "dependencies": {
+    "socket.io": "*",
+    "express": "*",
+    "twitter": "*",
+    "node-env-file": "*",
+    "jade": "*",
+    "body-parser": "*",
+    "cookie-parser": "*", 
+    "cookie-session": "*",
+    "url": "*",
+    "http": "*",
+    "request": "*"
+ 	}
+}

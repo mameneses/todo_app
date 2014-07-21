@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  if (title != "No USER logged in")
+    h1= title
+
+    form#userLogout(name="logout", method="post", action="/logout")
+      button#btnSubmit(type="submit") Logout
+    
+    form#newTask(name="new-task", method="post", action="/tasks")
+      input#content(type="text", placeholder="New Todo", name="task")
+      button#btnSubmit(type="submit") submit  
+
+    ul
+      each task in tasks
+        li=task.content
+        button
+          a(href="/login") Login
+
+  else 
+    h1=title
+    button
+      a(href="/login") Login
+    button
+      a(href="/register") Register
+
